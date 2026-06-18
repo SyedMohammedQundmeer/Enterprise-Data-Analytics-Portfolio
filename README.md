@@ -3,7 +3,7 @@
 Welcome to my central data analytics and engineering repository. This space showcases production-grade data pipelines, advanced SQL data transformations, and executive business intelligence assets built to enterprise standards.
 
 ## 🛠️ The Core Technical Stack
-* **Database Management:** MySql, PostgreSQL
+* **Database Management:** MySql
 * **Analytics Engineering:** dbt (Data Build Tool), Snowflake, Google BigQuery
 * **Cloud Architecture:** Google Cloud Platform (GCP)
 * **Business Intelligence:** Microsoft Power BI (DAX, Power Query)
