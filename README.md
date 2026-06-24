@@ -3,7 +3,7 @@
 Welcome to my central data analytics and engineering repository. This space showcases production-grade data pipelines, advanced SQL data transformations, and executive business intelligence assets built to enterprise standards.
 
 ## 🛠️ The Core Technical Stack
-* **Database Management:** MySql, PostgreSQL
+* **Database Management:** MySql
 * **Analytics Engineering:** dbt (Data Build Tool), Snowflake, Google BigQuery
 * **Cloud Architecture:** Google Cloud Platform (GCP)
 * **Business Intelligence:** Microsoft Power BI (DAX, Power Query)
@@ -13,10 +13,16 @@ Welcome to my central data analytics and engineering repository. This space show
 
 ## 📈 Active Production Projects
 
+
 ### 1. Advanced PAN Card Validation Engine (SQL)
-* **Core Objective:** Cleaning, standardizing, and checking high-volume Indian PAN Card entry string sequences using complex regular expressions (`REGEXP`).
-* **Status:** 🏗️ In Active Development (Phase 1 Database Architecture)
-* **Tech Stack:** MySQL Workbench
+* **Core Objective:** Cleaned, audited, and validated a staging database containing 10,001 raw Indian PAN Card records. Built data quality guardrails against structurally malformed entries and fraudulent sequence patterns.
+* **Tech Stack:** MySQL Workbench, Regular Expressions (`REGEXP_LIKE`)
+* **Key Insights & Discovered Data Profile:**
+  * **Total Records Processed:** 10,001
+  * **Valid PAN entries:** 3,180 (Records passing all strict corporate formatting constraints)
+  * **Invalid/Fake entries:** 5,854 (Caught repeating duplicate characters like `AAAAA` or `1111` and straight sequences like `ABCDE` or `1234`)
+  * **Missing or Empty rows:** 967 (Isolated using custom `TRIM` and `IS NULL` checking blocks)
+* **Core Skills Practiced:** Regular Expression position anchors (`^`, `$`), dynamic character backreferences (`([A-Z])\\1`), and summary metric aggregation handling using `WITH ROLLUP` and `COALESCE()`.
 
 ---
 ## 🎓 Credentials & Certifications Track
